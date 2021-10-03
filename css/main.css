@@ -1,0 +1,60 @@
+/* 공통 스타일 */
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+/* 중앙 메뉴 */
+
+
+
+
+/* 왼쪽 메뉴 */
+.subNav {
+  background-color: #212529;
+  left: -40px;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  box-sizing: border-box;
+  border: solid 1px black;
+}
+.subNav .title {
+  color: #fff;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.subNav:hover + .subMenu {
+  display: block;
+}
+.subMenu:hover {
+  display: block;
+}
+.subMenu {
+  background-color: #cfcfcf;
+  display: none;
+  position: relative;
+  left: -40px;
+}
+.subMenu .subtitle{
+  padding: 10px;
+}
+.subMenu .subtitle a {
+  color: #000;
+}
+.subMenu .subtitle a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+.title.week {
+  background-color: orange;
+  position: relative;
+  left: -40px;
+  top: 100px;
+}
