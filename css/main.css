@@ -9,11 +9,41 @@ ul {
 }
 
 /* 중앙 메뉴 */
+.mainMenu {
+  background-color: #0E1015;
+}
+section {
+  position: relative;
+}
+h2 {
+  color: #fff;
+  width: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.navBars ul {
+  display: flex;
+  position: absolute;
+  top: 40vh;
+  width: 200px;
+  left: 100%;
+  transform: translateX(-100%);
+  box-sizing: border-box;
+}
+.navBars li a{
+  color: #fff;
+  margin: 10px;
+}
 
 
 
 
 /* 왼쪽 메뉴 */
+.sub-menu {
+  background-color: #40444f;
+}
 .subNav {
   background-color: #212529;
   left: -40px;
@@ -31,9 +61,11 @@ ul {
 }
 .subNav:hover + .subMenu {
   display: block;
+  transition: 1s;
 }
 .subMenu:hover {
   display: block;
+  transition: display .5s;
 }
 .subMenu {
   background-color: #cfcfcf;
@@ -57,4 +89,36 @@ ul {
   position: relative;
   left: -40px;
   top: 100px;
+}
+
+
+/* 로그인 화면 */
+
+.login_wrap {
+  width: 300px;
+  height: 700px;
+  position: relative;
+  margin: 0 auto;
+  top: 70px;
+  border: solid 1px black;
+}
+.login_wrap .title {
+  text-align: center;
+}
+.form_box {
+  position: relative;
+  /* margin-top: 100px; */
+}
+.form_box .input_box span {
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.form_box .input_box input {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  height: 50px;
 }
